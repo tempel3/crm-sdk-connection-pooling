@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -25,14 +26,15 @@ namespace Kaziya.CRM.ConnectionPooling.Web
         
         protected void BuildContainer()
         {
+            // settings file
+            DotNetEnv.Env.Load(Path.Combine(HttpContext.Current.Server.MapPath("~"),".env"));
+            var connectionString = System.Environment.GetEnvironmentVariable("ConnectionString");
+            // container
             var builder = new ContainerBuilder();
-
+            
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
-            string OrganizationServiceUrl = "TODO";
-            int MaxCrmConnections = 4;
-            
-            builder.Register(i => new CrmConnectionPool(OrganizationServiceUrl) { MaxConnections = MaxCrmConnections }).SingleInstance();
+            builder.Register(i => new CrmConnectionPool(connectionString) { MaxConnections = 4 }).SingleInstance();
             builder.RegisterType<CrmOrganizationServiceFromPool>().As<IOrganizationService>().InstancePerRequest();
             
             // Set the dependency resolver to be Autofac.

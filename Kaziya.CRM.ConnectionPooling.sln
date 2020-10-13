@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaziya.CRM.ConnectionPoolin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaziya.CRM.ConnectionPooling", "Kaziya.CRM.ConnectionPooling\Kaziya.CRM.ConnectionPooling.csproj", "{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaziya.CRM.ConnectionPooling.Console", "Kaziya.CRM.ConnectionPooling.Console\Kaziya.CRM.ConnectionPooling.Console.csproj", "{0E5EFE5A-6E9E-475F-BEB5-61381CABB94C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5EFE5A-6E9E-475F-BEB5-61381CABB94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5EFE5A-6E9E-475F-BEB5-61381CABB94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5EFE5A-6E9E-475F-BEB5-61381CABB94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5EFE5A-6E9E-475F-BEB5-61381CABB94C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
