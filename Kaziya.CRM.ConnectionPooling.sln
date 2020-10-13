@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaziya.CRM.ConnectionPooling.Web", "Kaziya.CRM.ConnectionPooling.Web\Kaziya.CRM.ConnectionPooling.Web.csproj", "{60C90D6B-FF20-482E-B3FB-FA7701772AEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaziya.CRM.ConnectionPooling", "Kaziya.CRM.ConnectionPooling\Kaziya.CRM.ConnectionPooling.csproj", "{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60C90D6B-FF20-482E-B3FB-FA7701772AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C90D6B-FF20-482E-B3FB-FA7701772AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C90D6B-FF20-482E-B3FB-FA7701772AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C90D6B-FF20-482E-B3FB-FA7701772AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9E84FC-5613-4265-8B7F-9DC52BC0504C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
