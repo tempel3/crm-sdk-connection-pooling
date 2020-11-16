@@ -28,6 +28,12 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/Kaziya.CRM.ConnectionPooling.csproj'
+    versioningScheme: 'byBuildNumber'
+
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
