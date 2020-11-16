@@ -32,7 +32,8 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: '**/Kaziya.CRM.ConnectionPooling.csproj'
-    versioningScheme: 'byBuildNumber'
+    majorVersion: 0
+    minorVersion: $(Build.BuildNumber)    
 
 - task: VSTest@2
   inputs:
