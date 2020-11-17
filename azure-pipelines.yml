@@ -33,8 +33,10 @@ steps:
     command: 'pack'
     packagesToPack: '**/Kaziya.CRM.ConnectionPooling.csproj'
     majorVersion: 0
-    minorVersion: $(Build.BuildNumber)    
-    packDestination: "$(build.artifactStagingDirectory)"
+    minorVersion: 1
+    patchVersion: $(Build.BuildNumber)    
+    packDestination: "$(build.artifactStagingDirectory)"    
+    versioningScheme: "byPrereleaseNumber"
 
 - task: VSTest@2
   inputs:
